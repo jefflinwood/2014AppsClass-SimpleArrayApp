@@ -27,6 +27,23 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSArray *cities = @[@"Austin",@"Houston",@"San Antonio",@"Dallas"];
+    
+    NSString *firstCity = cities[0];
+    NSLog(@"First City: %@",firstCity);
+    
+    NSMutableArray *dogBreeds = [NSMutableArray new];
+    [dogBreeds addObject:@"Dalmatian"];
+    [dogBreeds addObject:@"Border Collie"];
+    [dogBreeds addObject:@"Golden Retriever"];
+    [dogBreeds addObject:@"Dachshund"];
+
+    for (int i=0; i< [dogBreeds count]; i++) {
+        NSString *dogBreed = dogBreeds[i];
+        NSLog(@"Dog Breed: %@",dogBreed);
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
